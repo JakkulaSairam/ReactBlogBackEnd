@@ -41,7 +41,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
-const port = "5000" || process.env.PORT;
+const port = process.env.PORT || "5000";
 app.listen(port, () => {
   console.log("Backend is running.");
 });
